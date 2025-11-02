@@ -88,12 +88,6 @@ The controller correctly responded to AHB transactions with valid `HREADYOUT` an
 
 ---
 
-## 📸 Screenshots
 
-- Simulation waveform  
-- Schematic (Genus)  
-- Area and Power reports  
-- Timing report  
-- Layout and GDSII views
 
 
