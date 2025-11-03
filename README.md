@@ -55,7 +55,7 @@ This controller is implemented using **synchronous logic** and verified through 
 - Verified for functional correctness using a **testbench**.
 
 ### 2️⃣ Functional Simulation
-- Simulated using **Cadence INCISIVE** or **ModelSim**.
+- Simulated using Vivado.
 - Verified read/write behavior and data integrity.
 
 ### 3️⃣ Synthesis (Cadence Genus)
