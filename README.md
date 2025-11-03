@@ -20,11 +20,11 @@ To design, simulate, synthesize, and implement an **AHB-Lite Memory Controller**
 
 | Category | Tool / Language |
 |-----------|-----------------|
-| HDL Design | Verilog HDL |
-| Functional Simulation | Cadence INCISIVE / ModelSim |
+| HDL Design | Vivado |
+| Functional Simulation | Vivado |
 | Synthesis | Cadence Genus |
 | Physical Design | Cadence Innovus |
-| OS / Environment | Linux (RHEL / Ubuntu) |
+| OS / Environment | Red Hat |
 | Reports | Timing, Area, Power |
 | Output | GDSII Layout |
 
