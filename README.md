@@ -2,15 +2,10 @@
 Verilog-based AHB-Lite memory controller with testbench, simulation results, and GDS layout generated using Cadence Virtuoso.
 # 🧠 AHB-Lite Memory Controller (RTL to GDSII Implementation)
 
-### 📘 Course:
-**VLSI System Design Practice (EC307)**  
-**Indian Institute of Information Technology, Design and Manufacturing, Kurnool**
-
----
 
 ## 🏁 Project Overview
 
-This project involves the **design and implementation of an AHB-Lite Memory Controller** using **Verilog HDL**, followed by the **RTL-to-GDSII flow** using **Cadence EDA tools**.  
+This project involves the **design and implementation of an AHB-Lite Memory Controller** using **Xilinx Vivado**, followed by the **RTL-to-GDSII flow** using **Cadence EDA tools**.  
 The goal is to bridge the gap between **RTL design** and **physical implementation**, ensuring correct functionality, timing closure, and a clean layout ready for fabrication.
 
 ---
@@ -51,11 +46,10 @@ This controller is implemented using **synchronous logic** and verified through 
 ## ⚙️ Design Flow
 
 ### 1️⃣ RTL Design
-- Implemented in **Verilog HDL**.
-- Verified for functional correctness using a **testbench**.
+- Implemented and Verified for functional correctness using **Vivad0**.
 
 ### 2️⃣ Functional Simulation
-- Simulated using Vivado.
+- Simulated using **Vivado**.
 - Verified read/write behavior and data integrity.
 
 ### 3️⃣ Synthesis (Cadence Genus)
