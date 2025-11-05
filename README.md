@@ -94,25 +94,38 @@ The controller correctly responded to AHB transactions with valid `HREADYOUT` an
 ---
 
 ### 🧠 Inspiration and Similarities
-The IEEE research paper provided the **conceptual foundation** for this work, particularly in understanding the **signal-level behavior** of the AHB-Lite protocol, its **handshaking mechanism**, and **memory-mapped data access**.  
-Both the paper and this implementation emphasize:
-- The design of a **slave-side memory controller** compatible with the AHB-Lite bus.  
-- Verification of **read/write operations** using simulation waveforms.  
-- The importance of maintaining **protocol timing and data integrity**.
+The IEEE paper served as the **conceptual foundation** for this work, particularly in understanding the **protocol behavior**, **handshaking mechanism**, and **signal timing** of AHB-Lite.  
+Both the paper and this implementation share:
+- The development of an **AHB-Lite slave memory controller**.  
+- Verification of **read/write data transactions**.  
+- Emphasis on **protocol compliance and timing accuracy**.  
 
-This project was inspired by that approach and began with similar RTL signal structures and behavioral modeling.
+The initial Verilog structure and simulation concepts were inspired by the methodology presented in the referenced work.
 
 ---
 
 ### 🔧 Modifications and Differences
-While the paper concentrated on **functional verification using SystemVerilog and UVM**, this implementation expands the scope toward **physical design realization** using the **RTL-to-GDSII flow**.  
-Major modifications include:
-- **Implementation in Verilog HDL** (instead of SystemVerilog).  
-- **Complete synthesis and place-and-route** using **Cadence Genus and Innovus**.  
-- Generation of **timing, power, and area reports** for post-synthesis analysis.  
-- Export of the final **GDSII layout**, completing the ASIC design cycle.  
+While the paper focuses mainly on **functional verification** using a **UVM-based SystemVerilog testbench**, this project extends beyond verification to **complete physical realization** using Cadence EDA tools.  
+Key differences include:
+- Implementation written in **pure Verilog HDL** instead of SystemVerilog.  
+- Addition of **synthesis, floorplanning, placement, and routing** steps using **Genus** and **Innovus**.  
+- Generation of **timing, power, and area** reports for detailed post-synthesis analysis.  
+- Export of **final GDSII layout**, completing the **RTL-to-GDSII design flow**.  
 
-Hence, this work bridges **academic research and practical ASIC implementation**, showing how a protocol-level design can be brought to silicon-ready form.
+---
+
+### 💎 Comparative Advantage — How This Project Improves Upon the Paper
+
+This implementation provides a **broader design perspective** than the original IEEE work by extending beyond simulation into **backend VLSI design**.  
+While the paper validates the memory controller at the **functional verification level**, this project demonstrates its **real-world implementability** through the following improvements:
+
+- ✅ **Complete ASIC design coverage:** From RTL to final GDSII, showing every stage of the VLSI pipeline.  
+- ✅ **Physical verification integration:** Includes DRC/LVS checks and area/power optimization reports.  
+- ✅ **Tool diversity:** Uses both **Xilinx Vivado** for front-end and **Cadence Genus/Innovus** for back-end design, bridging academic and industrial tools.  
+- ✅ **Fabrication-ready outcome:** The generated **GDS layout** represents an actual chip-level implementation possibility, which the paper did not achieve.  
+- ✅ **Design scalability:** Structured to support future extensions for multi-master or burst-mode operation.  
+
+Thus, this project transforms the conceptual and simulation-oriented IEEE design into a **fully verified and layout-ready hardware model**, demonstrating both **research understanding** and **practical engineering execution**.
 
 ---
 
