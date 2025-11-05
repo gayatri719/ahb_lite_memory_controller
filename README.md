@@ -84,6 +84,43 @@ The controller correctly responded to AHB transactions with valid `HREADYOUT` an
 
 ---
 
+## 📸 Project Snapshots
+
+Below are the key simulation, synthesis, and physical design outputs obtained during the RTL-to-GDSII flow.
+
+### 🔹 Schematic
+![Schematic](./schematic.jpg)
+*Figure: RTL-level schematic representation of the AHB-Lite Memory Controller.*
+
+---
+
+### 🔹 Timing Reports
+<p align="center">
+  <img src="./timing.jpg" width="400">
+  <img src="./timing1.jpg" width="400">
+</p>
+<p align="center"><em>Figure: Post-synthesis timing and slack reports from Cadence Genus.</em></p>
+
+---
+
+### 🔹 Power and Graph Analysis
+![Graph](./graph.jpg)
+*Figure: Timing/Power graph representing performance and analysis results.*
+
+---
+
+### 🔹 2D Layout
+![Layout2D](./layout2d.jpg)
+*Figure: 2D physical design layout generated after placement and routing.*
+
+---
+
+### 🔹 Final GDSII Layout
+![GDSII Layout](./gds.jpg)
+*Figure: Final GDSII layout exported from Cadence Innovus.*
+
+---
+
 ## 📖 Research Reference
 
 > **Shrikant Jadhav, Anila Kommineni, Manoj Kumar Gundu, and Youngsoo Kim**,  
